@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap - Framework de CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Fuentes de Texto de Google -->
+
+    <!-- FontAwesome - Iconos gratuitos -->
+    <script src="https://kit.fontawesome.com/89017be19b.js" crossorigin="anonymous"></script>
+
+    <!-- Script de Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Hola de Estilo CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>14ClaseJS 21 02 2024</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Imagen -->
+        <div class="mx-auto text-center">
+            <img src="./assets/img/conejo-perro-gato.jpg" alt="animales" class="img-fluid">
+            <h2 class="my-3">Consulta Veterinaria</h2>
+        </div>
+
+        <!-- Formulario -->
+        <form id="formulario">
+
+            <!-- Inputs -->
+            <div class="form-group">
+                <!-- dueño -->
+                <label for="propietario">Dueño: </label>
+                <input type="text" class="form-control" id="propietario" aria-describedby="textoAyuda">
+                <small id="textoAyuda" class="form-text text-muted">Nunca compartiremos tus datos.</small>
+            </div>
+
+
+            <div class="form-group">
+                <!-- telefono -->
+                <label for="telefono">Numero Telefonico: </label>
+                <input type="text" class="form-control" id="telefono">
+            </div>
+
+
+            <div class="form-group">
+                <!-- direccion -->
+                <label for="direccion">Lugar de Residencia: </label>
+                <input type="text" class="form-control" id="direccion">
+            </div>
+
+
+            <div class="form-group">
+                <!-- mascota -->
+                <label for="nombreMascota">Nombre de la Mascota: </label>
+                <input type="text" class="form-control" id="nombreMascota">
+            </div>
+
+
+            <div class="form-group">
+                <!-- tipo -->
+                <label for="tipo">Tipo</label>
+                <select class="form-control" id="tipo">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="conejo">Conejo</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <!-- motivo -->
+                <label for="enfermedad">Motivo de la consulta: </label>
+                <input type="text" class="form-control" id="enfermedad">
+            </div>
+
+            <!-- Botón -->
+            <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+
+        <!-- Resultado -->
+        <div class=" mt-5">
+            <p class="fw-bold">Datos Agregados</p>
+            <div id="resultado">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script de JS para utilizar Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+</body>
+
+</html>
